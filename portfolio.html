@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Omprakash Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body{
+            background:linear-gradient(to right,#f8f8f8,#eaeaea);
+        }
+
+        /* NAVBAR */
+        nav{
+            background:magenta;
+            padding:15px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            color:white;
+            font-size:20px;
+            font-weight:bold;
+            position:sticky;
+            top:0;
+            z-index:1000;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:25px;
+        }
+
+        nav ul li{
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        nav ul li:hover{
+            transform:scale(1.1);
+        }
+
+        /* MAIN SECTION */
+        .container{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:60px;
+            flex-wrap:wrap;
+        }
+
+        .details{
+            width:55%;
+            background:white;
+            padding:35px;
+            border-radius:20px;
+            box-shadow:0 15px 35px rgba(0,0,0,0.2);
+            transition:0.6s;
+            transform-style:preserve-3d;
+        }
+
+        .details:hover{
+            transform:rotateY(10deg) rotateX(8deg);
+        }
+
+        .details h2{
+            color:magenta;
+            margin-bottom:15px;
+        }
+
+        .details p{
+            margin:8px 0;
+            font-size:16px;
+        }
+
+        /* PHOTO SECTION */
+        .photo{
+            width:35%;
+            text-align:center;
+        }
+
+        .photo img{
+            width:280px;
+            height:280px;
+            border-radius:50%;
+            object-fit:cover;
+            border:6px solid magenta;
+            box-shadow:0 15px 30px rgba(0,0,0,0.3);
+            transition:0.5s;
+        }
+
+        .photo img:hover{
+            transform:scale(1.1) rotate(5deg);
+        }
+
+        hr{
+            margin:40px 0;
+            border:2px solid magenta;
+        }
+
+        /* SKILLS */
+        .section{
+            background:white;
+            margin:20px 60px;
+            padding:30px;
+            border-radius:20px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .section h2{
+            color:magenta;
+            margin-bottom:15px;
+        }
+
+        .section p{
+            margin:10px 0;
+        }
+
+        /* BUTTON */
+        .contact-btn{
+            display:block;
+            margin:30px auto;
+            padding:12px 30px;
+            background:magenta;
+            color:white;
+            border:none;
+            border-radius:30px;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .contact-btn:hover{
+            background:black;
+        }
+
+        .contact-info{
+            text-align:center;
+            font-weight:bold;
+            display:none;
+            margin-top:10px;
+        }
+
+        /* FOOTER */
+        footer{
+            background:black;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+        }
+
+        a{
+            color:magenta;
+            text-decoration:none;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:900px){
+            .container{
+                flex-direction:column;
+                text-align:center;
+            }
+            .details, .photo{
+                width:100%;
+            }
+            .photo{
+                margin-top:30px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div>Omprakash Portfolio</div>
+    <ul>
+        <li>Home</li>
+        <li>Skills</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<!-- MAIN -->
+<div class="container">
+
+    <div class="details">
+        <h2>My Details</h2>
+        <p><b>Name:</b> Omprakash</p>
+        <p><b>Mobile:</b> 
+   <a href="tel:9389664809">9389664809</a>
+</p>
+        <p><b>Qualification:</b> Diploma in Computer Science Engg</p>
+        <p><b>Address:</b> Kyari, Ramnagar, Dist- Nainital</p>
+        <p><b>Email:</b> 
+   <a href="mailto:omsati94@gmail.com">
+      omsati94@gmail.com
+   </a>
+</p>
+
+<p><b>GitHub:</b> 
+   <a href="https://github.com/Sati12345678ji" target="_blank">
+      Sati12345678ji
+   </a>
+</p>
+
+<p><b>LinkedIn:</b> 
+   <a href="https://www.linkedin.com/in/om-prakash-77aa6b288" target="_blank">
+      www.linkedin.com/in/om-prakash-77aa6b288
+   </a>
+</p>
+    </div>
+
+    <div class="photo">
+        <!-- YOUR IMAGE -->
+        <img src="C:\Users\omsat\OneDrive\Desktop\omp.jpeg" alt="Omprakash Photo">
+    </div>
+
+</div>
+
+<hr>
+
+<!-- SKILLS -->
+<div class="section">
+    <h2>My Skills</h2>
+    <p>Web Development</p>
+    <p>Programming Languages: C, C++, Java (Basic)</p>
+    <p>Web Design: HTML, CSS, JavaScript</p>
+</div>
+
+<!-- PERSONAL DETAILS -->
+<div class="section">
+    <h2>Personal Details</h2>
+    <p>Father's Name: Mr Dinesh Chandra</p>
+    <p>Mother's Name: Bhagwati Devi</p>
+    <p>Instagram: 
+        <a href="https://www.instagram.com/om_pandit_uk_19?igsh=MXR6b2Rhc2xoYTVmdQ==" target="_blank">
+            Visit Profile
+        </a>
+    </p>
+</div>
+
+<!-- CONTACT -->
+<button class="contact-btn" onclick="showContact()">Contact Us</button>
+<div class="contact-info" id="contactInfo">
+    Email: omsati94@gmail.com | Mobile: 9389664809
+</div>
+
+<!-- FOOTER -->
+<footer>
+    All copyrights reversed Omprakash
+</footer>
+
+<script>
+function showContact(){
+    var info = document.getElementById("contactInfo");
+    info.style.display = (info.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
